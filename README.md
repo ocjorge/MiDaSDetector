@@ -40,5 +40,40 @@ pip install -r requirements.txt
 
 Asegúrate de tener instalado el modelo MiDaS_small con torch.hub.
 
+ ## 🏁 Uso
+Clona este repositorio y coloca tu modelo YOLOv8 personalizado (best.pt) y el video a procesar.
+
+Ajusta las rutas y parámetros del archivo main.py:
+
+python
+Copiar
+Editar
+MODEL_PATH_VEHICLES = 'ruta/a/best.pt'
+VIDEO_INPUT_PATH = 'ruta/al/video.mp4'
+Ejecuta el script:
+
+bash
+Copiar
+Editar
+python main.py
+El video anotado se guardará automáticamente en ./runs_local/advanced_video_processing/.
+
+## ⚠️ Notas importantes
+El valor FOCAL_LENGTH_PX debe calibrarse según la cámara utilizada.
+
+Los valores en REAL_OBJECT_SIZES_M son estimaciones y pueden ajustarse según el entorno.
+
+La escala de profundidad de MiDaS es relativa y requiere ajuste empírico o calibración para métricas reales.
+
+ ## 📝 Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más información.
+
+ ## 🤝 Créditos
+Ultralytics YOLOv8
+
+MiDaS - Intel ISL
+
+OpenCV
+
 
 
