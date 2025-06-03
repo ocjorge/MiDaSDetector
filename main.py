@@ -14,8 +14,8 @@ print("Paso 0: Librerías importadas correctamente.")
 # ==============================================================================
 print("\nPaso 1: Configurando rutas y parámetros...")
 
-MODEL_PATH_VEHICLES = 'F:/Documents/PycharmProjects/MiDaSDetector/best.pt'  # TU MODELO DE VEHÍCULOS
-VIDEO_INPUT_PATH = 'F:\Documents\PycharmProjects\MiDaSDetector\GH012372_no_audio.mp4'  # VIDEO SIN AUDIO O RE-CODIFICADO
+MODEL_PATH_VEHICLES = 'ruta/a/best.pt'  # TU MODELO DE VEHÍCULOS
+VIDEO_INPUT_PATH = 'ruta/al/video.mp4'  # VIDEO SIN AUDIO O RE-CODIFICADO
 
 OUTPUT_DIR_ADVANCED = "./runs_local/advanced_video_processing"
 os.makedirs(OUTPUT_DIR_ADVANCED, exist_ok=True)
